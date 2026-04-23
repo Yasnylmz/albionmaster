@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Build & Derlenmiş Dosyalar
+build/
+dist/
+release/
+*.exe
+/AlbionMaster.spec
+
+# Cloudflare / tool cache
+.wrangler/
+
+# Loglar ve Veritabanları
+logs/
+*.log
+
+# One-off data generation dumps/scripts
+data/_source/
+create-potions-foods-focus.js
+update-potions-foods-focus.js

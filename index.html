@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albion Master</title>
+<link rel="icon" href="/icon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <img class="logo-mark" src="/icon.ico" alt="" aria-hidden="true">
+      <div class="logo-stack">
+        <h1 class="brand-title">
+          <span class="brand-albion" id="brandAlbion" data-no-translate="1">Albion Master</span>
+        </h1>
+      </div>
+    </div>
+    <div class="nav-tabs">
+      <button id="nav-flipper" class="tab-btn active" onclick="loadPage('flipper')"><span class="tab-icon" aria-hidden="true">💰</span><span id="nav-flipper-label" class="tab-label" data-no-translate="1">Black Market Flipper</span></button>
+      <button id="nav-total-profit" class="tab-btn" onclick="loadPage('total-profit')"><span class="tab-icon" aria-hidden="true">📈</span><span id="nav-total-profit-label" class="tab-label" data-no-translate="1">Total Profit</span></button>
+      <div id="nav-crafting-wrap" class="nav-dropdown">
+        <button id="nav-crafting" class="tab-btn nav-dropdown-trigger" type="button" onclick="loadPage('crafting')"><span class="tab-icon" aria-hidden="true">🛠️</span><span id="nav-crafting-label" class="tab-label" data-no-translate="1">Craft Calculator</span></button>
+        <div class="nav-dropdown-menu nav-dropdown-menu-crafting">
+          <button id="nav-crafting-equipment" class="nav-dropdown-item" type="button" onclick="navigateToCraftingPage('equipment')"><span class="tab-icon" aria-hidden="true">⚔️</span><span id="nav-crafting-equipment-label" class="tab-label" data-no-translate="1">Equipment</span></button>
+          <button id="nav-crafting-foods" class="nav-dropdown-item" type="button" onclick="navigateToCraftingPage('foods')"><span class="tab-icon" aria-hidden="true">🍲</span><span id="nav-crafting-foods-label" class="tab-label" data-no-translate="1">Foods</span></button>
+          <button id="nav-crafting-potions" class="nav-dropdown-item" type="button" onclick="navigateToCraftingPage('potions')"><span class="tab-icon" aria-hidden="true">🧪</span><span id="nav-crafting-potions-label" class="tab-label" data-no-translate="1">Potions</span></button>
+        </div>
+      </div>
+      <div id="nav-farm-wrap" class="nav-dropdown">
+        <button id="nav-farm" class="tab-btn nav-dropdown-trigger" type="button" onclick="loadPage('farm')"><span class="tab-icon" aria-hidden="true">🏝️</span><span id="nav-farm-label" class="tab-label" data-no-translate="1">Island Calculator</span></button>
+        <div class="nav-dropdown-menu nav-dropdown-menu-farm">
+          <button id="nav-farm-crop" class="nav-dropdown-item" type="button" onclick="navigateToFarmCalculator('farm')"><span class="tab-icon" aria-hidden="true">🌾</span><span id="nav-farm-crop-label" class="tab-label" data-no-translate="1">Crop</span></button>
+          <button id="nav-farm-herb" class="nav-dropdown-item" type="button" onclick="navigateToFarmCalculator('herb')"><span class="tab-icon" aria-hidden="true">🌿</span><span id="nav-farm-herb-label" class="tab-label" data-no-translate="1">Herbs</span></button>
+          <button id="nav-farm-animal" class="nav-dropdown-item" type="button" onclick="navigateToFarmCalculator('animal', 'pasture')"><span class="tab-icon" aria-hidden="true">🐄</span><span id="nav-farm-animal-label" class="tab-label" data-no-translate="1">Animal</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div class="header-lang">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button type="button" class="lang-pill active" id="lang-tr" onclick="setLanguage('tr')"><span class="lang-flag lang-flag-tr" aria-hidden="true"></span><span>TR</span></button>
+          <button type="button" class="lang-pill" id="lang-en" onclick="setLanguage('en')"><span class="lang-flag lang-flag-en" aria-hidden="true"></span><span>EN</span></button>
+        </div>
+      </div>
+
+      <div class="conn-bar">
+        <div class="conn-endpoint disconnected" id="connEndpoint" aria-label="Connection state">
+          <span class="conn-endpoint-dot" id="connDot" aria-hidden="true"></span>
+          <span class="conn-endpoint-text" id="connStatus">Bağlı Değil</span>
+        </div>
+        <button class="btn btn-secondary" id="adcPathBtn" onclick="changeAdcPath()">ADC</button>
+        <input class="ws-url-input ws-url-input--hidden" id="wsUrl" type="text" value="ws://localhost:8080" placeholder="ws://localhost:8080" aria-hidden="true" tabindex="-1">
+        <button class="btn" id="connectBtn" onclick="toggleConnect()">Connect</button>
+        <span id="reconnectInfo"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container" id="app-content" style="padding-top: 24px;"></div>
+
+<div class="update-modal-overlay" id="updateModalOverlay" hidden>
+  <div class="update-modal" role="dialog" aria-modal="true" aria-labelledby="updateModalTitle">
+    <div class="update-modal-badge" id="updateModalBadge">NEW VERSION</div>
+    <h2 class="update-modal-title" id="updateModalTitle">Yeni sürüm hazır</h2>
+    <p class="update-modal-subtitle" id="updateModalSubtitle">Uygulamanın daha güncel sürümü indirilmeye hazır.</p>
+
+    <div class="update-version-row">
+      <div class="update-version-card">
+        <span class="update-version-label" id="updateCurrentVersionLabel">Current</span>
+        <strong id="updateCurrentVersionValue">1.5.1</strong>
+      </div>
+      <div class="update-version-arrow">→</div>
+      <div class="update-version-card update-version-card-accent">
+        <span class="update-version-label" id="updateLatestVersionLabel">Latest</span>
+        <strong id="updateLatestVersionValue">1.5.3</strong>
+      </div>
+    </div>
+
+    <div class="update-notes-box">
+      <div class="update-notes-label" id="updateNotesLabel">Release notes</div>
+      <div class="update-notes-text" id="updateNotesText">Food/Potion focus hesabı ve güncelleme yönlendirmesi düzeltildi.</div>
+    </div>
+
+    <div class="update-actions">
+      <button class="btn btn-secondary" type="button" id="updateChangelogBtn">Changelog</button>
+      <button class="btn btn-secondary" type="button" id="updateLaterBtn">Later</button>
+      <button class="btn" type="button" id="updateDownloadBtn">Download Update</button>
+    </div>
+  </div>
+</div>
+
+<div class="update-modal-overlay" id="clearDataModalOverlay" hidden>
+  <div class="update-modal clear-data-modal" role="dialog" aria-modal="true" aria-labelledby="clearDataModalTitle">
+    <div class="update-modal-badge">WARNING</div>
+    <h2 class="update-modal-title" id="clearDataModalTitle">Verileri temizle?</h2>
+    <p class="update-modal-subtitle">Bu işlem yalnızca yerel önbelleği ve kayıtlı geçici verileri temizler. Teknik adres bilgisi gösterilmez.</p>
+
+    <div class="update-notes-box">
+      <div class="update-notes-label">Ne silinecek?</div>
+      <div class="update-notes-text">Önbellek, yerel fiyat verileri ve kaydedilmiş geçici listeler kaldırılacak.</div>
+    </div>
+
+    <div class="update-actions">
+      <button class="btn btn-secondary" type="button" id="clearDataCancelBtn">Vazgeç</button>
+      <button class="btn danger" type="button" id="clearDataConfirmBtn">Temizle</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

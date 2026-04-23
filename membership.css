@@ -1,0 +1,287 @@
+/* Membership Modal Styling */
+
+.license-membership-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.license-membership-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.license-membership-modal {
+  background: rgba(26, 21, 16, 0.95);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.license-membership-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #958877;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.license-membership-close:hover {
+  color: #c9a84c;
+}
+
+.pricing-container {
+  padding: 20px 0;
+}
+
+.pricing-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #d4c4a0;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.pricing-card {
+  background: rgba(26, 21, 16, 0.6);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+  --accent: #c9a84c;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  border-color: var(--accent);
+  background: rgba(26, 21, 16, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.plan-flip-starter {
+  --accent: #f59e0b;
+}
+
+.pricing-card.plan-flip-pro {
+  --accent: #f59e0b;
+}
+
+.pricing-card.plan-flip-unlimited {
+  --accent: #f59e0b;
+  border: 2px solid rgba(245, 158, 11, 0.4);
+}
+
+.pricing-card.plan-craft-island {
+  --accent: #3b82f6;
+}
+
+.pricing-card.plan-all-access {
+  --accent: #a855f7;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, var(--accent) 0%, rgba(255, 255, 255, 0.1) 100%);
+  color: #1a1511;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.plan-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #d4c4a0;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 8px 0 0 0;
+  line-height: 1;
+}
+
+.plan-period {
+  font-size: 13px;
+  color: #958877;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.plan-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #958877;
+  flex: 1;
+}
+
+.plan-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+  line-height: 1.5;
+}
+
+.plan-features li:first-child {
+  padding-top: 0;
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  color: var(--accent);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.plan-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1511;
+  transform: translateY(-2px);
+}
+
+.plan-btn:active {
+  transform: translateY(0);
+}
+
+/* Scrollbar styling for modal */
+.license-membership-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.license-membership-modal::-webkit-scrollbar-track {
+  background: rgba(26, 21, 16, 0.3);
+  border-radius: 4px;
+}
+
+.license-membership-modal::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.25);
+  border-radius: 4px;
+}
+
+.license-membership-modal::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 168, 76, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .license-membership-modal {
+    max-width: 95vw;
+    padding: 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .license-membership-modal {
+    max-width: 95vw;
+    padding: 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .license-membership-modal {
+    max-width: 95vw;
+    padding: 20px;
+  }
+
+  .pricing-container {
+    padding: 10px 0;
+  }
+
+  .pricing-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+
+  .plan-name {
+    font-size: 14px;
+  }
+
+  .plan-price {
+    font-size: 20px;
+  }
+
+  .plan-features {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,407 @@
+NAVIGATION
+AlbionFlip&Craft → Albion Master
+Albion Flip&Craft → Albion Master
+Black Market Flipper → Kara Borsa Al-Sat
+Total Profit → Toplam Kâr
+Calculators → Hesaplayıcılar
+Craft Calculator → Üretim Hesaplayıcısı
+Island Calculator → Ada Hesaplayıcısı
+Tracked Items → Takip Edilen
+Profitable Item Count → Karlı Ürün Adeti
+Crop → Mahsuller
+Animal → Hayvanlar
+Tame Animals → Binek Hayvanları
+Farm Animals → Çiftlik Hayvanları
+Pasture → Binek Hayvanları
+Kennel → Vahşi Hayvanlar
+All Animals • Shared Total → Tüm Hayvanlar • Toplam Kazanç
+Baby => Tame → Bebek Hali => Evcil Hali
+Profit If Baby Drops → Yavru Düşerse Kâr
+1 baby drop assumed → 1 yavru düşmesi varsayıldı
+Profit If No Baby Drop → Yavru Düşmezse Kâr
+0 baby drop assumed → 0 yavru düşmesi varsayıldı
+
+Tame => Mount → Evcil Hali => Binek Hali
+COMMON UI
+Live => Canlı
+Mode => Mod
+Best => En İyi
+Profit => Kâr
+Flip => Al-Sat
+Enchant => İşleme
+ROI => Yüzde
+Price => Fiyat
+Avg => Ort
+Top 1 => İlk 1
+Top 2 => İlk 2
+Top 3 => İlk 3
+Top 4 => İlk 4
+Top 5 => İlk 5
+Copied => Kopyalandı
+Clear Data => Verileri Temizle
+Load More => Daha Fazla Yükle
+All records loaded=> Tüm kayıtlar yüklendi
+
+FLIPPER
+Black Market → Kara Borsa
+Min Profit → Min Kâr
+Max Buy Price → Maks Alış Fiyatı
+Extra Enchant Profit → Ek İşleme Kârı
+Tax % → Vergi %
+Tier → Kademe
+Search → Ara
+All → Tümü
+Buy City → Alış Şehri
+Type item name... → Eşya adı yazın...
+Ready Flip Profit → Hazır Ürün Al-Sat Kârı
+Enchant Flip Profit → İşleme Al-Sat Kârı
+Buy Price → Alış Fiyatı
+BM Sell → KB Satış
+uzun hali: Kara Borsa Satış
+Duration → Süre
+City Summary Flip → Şehir Bazlı Al-Sat Özeti
+Rune Price Detail → Rün Fiyat Detayı
+Live Log → Canlı Log
+Detail → Detay
+Select an item from the table. → Tablodan bir eşya seçin.
+Waiting for data... → Veri bekleniyor...
+Connect WebSocket and open Albion Online. → WebSocket’e bağlanın ve Albion Online’ı açın.
+Connect → Bağlan
+Disconnect → Bağlantıyı Kes
+Connected → Bağlandı
+Disconnected → Bağlı Değil
+Waiting for profitable flip data... → Karlı flip verisi bekleniyor...
+Waiting for profitable enchant data... → Karlı işleme verisi bekleniyor...
+Best path: buy ready → En iyi yol: hazır
+item. → ürünü almak.
+Now → Şimdi
+Pending → Bekleniyor
+Pending... → Bekleniyor...
+Reset → Sıfırla
+No data to display. → Gösterilecek veri yok.
+All results loaded → Tüm sonuçlar yüklendi
+This row is locked. Use Reset first. → Bu satır kilitli. Önce Sıfırla kullanın.
+Item data could not be found. → Ürün verisi bulunamadı.
+No valid enchant path for this item. → Bu ürün için geçerli bir işleme yolu yok.
+Copy label could not be created. → Kopyalama etiketi oluşturulamadı.
+No enchant path for this row. → Bu satır için işleme hesabı yok.
+Source → Kaynak
+count → adet
+profitable items → kârlı ürün
+total profit → toplam kâr
+Recipe data not found. → Reçete verisi bulunamadı.
+Price: → Fiyat:
+Net → Net
+Profit Difference → Kâr Farkı
+1 Book Profit → 1 Kitap Kârı
+Direct → Al-Sat
+Good → İyi
+Outstanding → Seçkin
+Excellent → Mükemmel
+Masterpiece → Başyapıt
+Normal → Normal
+Quality → Kalite
+
+
+TOTAL PROFIT
+Today → Bugün
+This Week → Bu Hafta
+This Month → Bu Ay
+Total Records → Toplam Kayıt
+Recent Transactions → Son İşlemler
+Product → Ürün
+Mode → Mod
+City → Şehir
+Profit → Kâr
+Date → Tarih
+No records yet. → Henüz kayıt yok.
+Mode Summary → Mod Özeti
+Top Profitable Records → En Kârlı Kayıtlar
+Flip Total → Toplam Al-Sat Kârı
+Enchant Total → Toplam İşleme Kârı
+record → kayıt
+records → kayıtlar
+Delete this record → Bu kaydı sil
+
+
+CRAFTING
+Albion Craft Simulator → Albion Üretim Simülatörü
+Equipment Calculator → Ekipman Hesaplayıcı
+Target Item Selection → Hedef Eşya Seçimi
+For example: Bloodletter, Mercenary Jacket... → Örneğin: KanDöken, Paralı Asker Ceketi...
+Potion Calculator → İksir Hesaplayıcı
+Food Calculator → Yemek Hesaplayıcı
+Potions → İksirler
+Foods → Yemekler
+Potion Selection → İksir Seçimi
+Food Selection → Yemek Seçimi
+Search potion... → İksir ara...
+Search food... → Yemek ara...
+Item not found → Eşya bulunamadı
+Market data is being collected... Please open the market in-game. → Pazar verisi toplanıyor... Lütfen oyunda pazarı açın.
+Tier → Kademe
+Enchant → İşleme
+.0 (Normal) → .0 (Normal)
+.1 (Rune) → .1 (Rün)
+.2 (Soul) → .2 (Ruh)
+.3 (Relic) → .3 (Kalıntı)
+Artifact Cost → Artifakt Maliyeti
+Crafting Tax → Üretim Vergisi
+Required Materials → Gerekli Malzemeler
+total needed → toplam ihtiyaç
+Total Cost → Toplam Maliyet
+Flat item crafting + Runes → Düz eşya üretimi + Rünler
+Inter-City Craft Cost Comparison → Şehirler Arası Üretim Maliyet Karşılaştırması
+Profit Difference by Quality → Kaliteye Göre Kâr Farkı
+Based on crafting cost → Üretim maliyetine göre
+To fill this section, you need to see the selected item quality sales in the market. → Bu bölümün dolması için seçili eşyanın kalite satışlarını pazarda görmeniz gerekir.
+City-Based Net Profit Comparison → Şehir Bazlı Net Kâr Karşılaştırması
+Craft + sell in same city → Aynı şehirde üret + sat
+Quality → Kalite
+Material Price Summary → Malzeme Fiyat Özeti
+Raw cross-city difference → Şehirler arası ham fark
+Material → Malzeme
+Material city data is being collected. → Malzeme şehir verisi toplanıyor.
+Most Profitable City Route → En Karlı Şehir Rotası
+Craft city pending → Üretim şehri bekleniyor
+Sell → Satış
+Route net profit → Rota net kâr
+Global Settings → Genel Ayarlar
+Market Tax (%) → Pazar Vergisi (%)
+Bonus Settings → Bonus Ayarları
+City Bonus → Şehir Bonusu
+Bonus City → Bonus Şehir
+None → Yok
+Daily Production Bonus → Günlük Üretim Bonusu
+Daily Bonus → Günlük Bonus
+RRR → İade Oranı
+Fetching... → Çekiliyor...
+
+FARM
+
+Shared Spec → Paylaşılan Uzmanlık
+Crop Main Spec → Ana Mahsul Uzmanlığı
+Total Focus Points → Toplam Odak Puanı
+Main Animal Level → Ana Hayvan Seviyesi
+Farm Seeds → Çiftlik Tohumları
+Offspring Yield → Yavru Verimi
+Baby Drop Value → Yavru Düşüş Değeri
+If it drops 1 baby → 1 yavru düşerse
+Mount Profit → Binek Kârı
+Mount → Binek
+Favorite Diet → Sevdiği Yem
+Food Cost → Yem Maliyeti
+Baby Cost → Yavru Maliyeti
+Sell Value → Satış Değeri
+Watered Slots → Sulanan Alanlar
+Dry Slots → Susuz Alanlar
+Watered Slot → Sulu Alan
+Watered + Dry → Sulu + Susuz
+Watered → Sulu
+Dry → Susuz
+All Crops • Shared Total → Tüm Mahsuller • Toplam Kazanç
+Planting Mix → Ekim Dağılımı
+Watered slots use focus, dry slots use base yield → Sulu alanlar odak kullanır, susuz alanlar temel verimi kullanır
+Product Yield +%10 → Ürün Verimi +%10
+Expected Profit → Beklenen Kâr
+Expected Extra → Beklenen Ek Getiri
+Extra Drop → Ek Düşüş
+Chance → Şans
+Seed Cost → Tohum Maliyeti
+Seed Return → Tohum İadesi
+Seed Return Rate → Tohum İade Oranı
+Crop Sell Price → Mahsul Satış Fiyatı
+Net Profit → Net Kâr
+Focus Cost → Odak Maliyeti
+Focus Used → Kullanılan Odak
+Focus Remaining → Kalan Odak
+Insufficient Focus → Yetersiz Odak
+Farmer Level → Çiftçi Seviyesi
+Meat → Et
+Plant → Bitki
+
+QUALITY / RESOURCES / ARTIFACTS
+Plank → Kalas
+Bar → Külçe
+Leather → Deri
+Cloth → Kumaş
+Rune → Rün
+Soul → Ruh
+Relic → Kalıntı
+Bars → Külçeler
+Planks → Kalaslar
+
+CITIES
+Lymhurst → Lymhurst
+Bridgewatch → Bridgewatch
+Martlock → Martlock
+Fort Sterling → Fort Sterling
+Thetford → Thetford
+Brecilien → Brecilien
+Caerleon → Caerleon
+
+FARM CROPS
+Carrot Seeds → Havuç Tohumu
+Bean Seeds → Fasulye Tohumu
+Wheat Seeds → Buğday Tohumu
+Turnip Seeds → Turp Tohumu
+Cabbage Seeds → Lahana Tohumu
+Potato Seeds → Patates Tohumu
+Corn Seeds → Mısır Tohumu
+Pumpkin Seeds → Balkabağı Tohumu
+
+FARM ANIMALS
+Baby Chickens → Civciv
+Kid → Oğlak
+Gosling → Kaz Yavrusu
+Lamb → Kuzu
+Piglet → Domuz Yavrusu
+Calf → Buzağı
+Chicken → Tavuk
+Goat → Keçi
+Goose → Kaz
+Sheep → Koyun
+Pig → Domuz
+Cow → İnek
+Hen Egg → Tavuk Yumurtası
+Goat's Milk → Keçi Sütü
+Goose Egg → Kaz Yumurtası
+Sheep's Milk → Koyun Sütü
+Cow's Milk → İnek Sütü
+Raw Chicken → Tavuk Eti
+Raw Goat → Keçi Eti
+Raw Goose → Kaz Eti
+Raw Mutton → Koyun Eti
+Raw Pork → Domuz Eti
+Raw Beef → Sığır Eti
+Animal Product Info → Hayvan Ürün Bilgisi
+Byproduct → Yan Ürün
+Meat when slaughtered → Kesildiğinde Verilen Et
+None → Yok
+Only meat → Sadece et verir
+Journeyman's Ox Calf → Acemi Öküz Yavrusu
+Adept's Ox Calf → Usta Çırak Öküz Yavrusu
+Expert's Ox Calf → Uzman Öküz Yavrusu
+Master's Ox Calf → Usta Öküz Yavrusu
+Grandmaster's Ox Calf → Büyük Usta Öküz Yavrusu
+Elder's Ox Calf → Yaşlı Usta Öküz Yavrusu
+Journeyman's Foal → Acemi Tay
+Adept's Foal → Usta Çırak Tay
+Expert's Foal → Uzman Tay
+Master's Foal → Usta Tay
+Grandmaster's Foal → Büyük Usta Tay
+Elder's Foal → Yaşlı Usta Tay
+Adept's Fawn → Usta Çırak Geyik Yavrusu
+Swiftclaw Cub → Hızlıpençe Yavrusu
+Greywolf Pup → Bozkurt Yavrusu
+Direwolf Pup → Azılı Kurt Yavrusu
+Direboar Piglet → Yaban Domuzu Yavrusu
+Swamp Dragon Pup → Bataklık Ejderi Yavrusu
+Direbear Cub → Azılı Ayı Yavrusu
+Mammoth Calf → Mamut Yavrusu
+Planned Farming Days → Planlanan Beslenme Süresi
+First Cycle Profit → İlk Dönem Kârı
+Daily Production Profit → Günlük Üretim Kârı
+Estimated Profit → Tahmini Kâr
+Baby Moabird → Moa Kuşu Yavrusu
+Wild Boarlet → Yaban Domuzu Yavrusu
+Bighorn Ram Lamb → Büyükboynuzlu Koç Yavrusu
+Mystic Owlet → Mistik Baykuş Yavrusu
+Hellspinner Baby → Cehennem Örümceği Yavrusu
+Baby Swamp Salamander → Bataklık Semenderi Yavrusu
+Winter Bear Cub → Kış Ayısı Yavrusu
+
+
+FAVORITE DIET / FOOD NAMES
+Sheaf of Wheat → Buğday Demeti
+Turnips → Turp
+Cabbage → Lahana
+Potatoes → Patates
+Bundle of Corn → Mısır
+Pumpkin → Balkabağı
+
+MOUNTS / PRODUCTS
+Journeyman's Riding Horse → Acemi Binek Atı
+Adept's Riding Horse → Usta Çırak Binek Atı
+Expert's Riding Horse → Uzman Binek Atı
+Master's Riding Horse → Usta Binek Atı
+Grandmaster's Riding Horse → Büyük Usta Binek Atı
+Elder's Riding Horse → Yaşlı Usta Binek Atı
+Journeyman's Transport Ox → Acemi Yük Öküzü
+Adept's Transport Ox → Usta Çırak Yük Öküzü
+Expert's Transport Ox → Uzman Yük Öküzü
+Master's Transport Ox → Usta Yük Öküzü
+Grandmaster's Transport Ox → Büyük Usta Yük Öküzü
+Elder's Transport Ox → Yaşlı Usta Yük Öküzü
+Adept's Giant Stag → Usta Çırak Dev Geyik
+Swiftclaw → Hızlıpençe
+Greywolf → Bozkurt
+Direwolf → Azılı Kurt
+Saddled Direboar → Eyerlenmiş Yaban Domuzu
+Saddled Swamp Dragon → Eyerlenmiş Bataklık Ejderi
+Saddled Direbear → Eyerlenmiş Azılı Ayı
+Elder's Transport Mammoth → Yaşlı Usta Yük Mamutu
+Saddled Moabird → Eyerlenmiş Moa Kuşu
+Saddled Wild Boar → Eyerlenmiş Yaban Domuzu
+Saddled Bighorn Ram → Eyerlenmiş Büyükboynuzlu Koç
+Saddled Swamp Salamander → Eyerlenmiş Bataklık Semenderi
+Saddled Winter Bear → Eyerlenmiş Kış Ayısı
+Hellspinner → Cehennem Örümceği
+Soulspinner → Ruhdokuyucu
+City Material → Şehir Malzemesi
+Base Yield → Başlangıç Verimi
+Daily Bonus → Günlük Bonus
+Offspring Yield +%10 → Yavru Verimi +%10
+Grow → Büyüme Süresi
+Focus / Animal → Odak / Hayvan
+Feedings → Besleme
+Required 1 → Gerekli
+Required 2 → Gerekli
+Result → Sonuç
+Mount Preparation → Binek Hazırlama
+Animal Count → Hayvan Sayısı
+Animal Spec Level → Hayvan Spec Leveli
+Animal Spec Leveli → Hayvan Uzmanlık Seviyesi
+1 Plant Fiyat → 1 Yem Fiyatı
+Evcil Fiyat → Evcil Hayvan Fiyatı
+Yavru Fiyat → Yavru Hayvan Fiyatı
+Feed / Feeding → Yem Adeti
+Breeding Capacity → Focus Kapasitesi
+Remaining Focus → Kalan Fokus
+Live Pool → Canlı Havuz
+Fetch Live Prices → Canlı Fiyat Çek
+Live craft prices help fill material and sell prices before opening the in-game market. → Canlı üretim fiyatları, oyun içi pazarı açmadan önce malzeme ve satış fiyatlarını doldurmaya yardımcı olur.
+Produces → Üretilir
+Production → Üretim
+Craft Unit → Üretim
+Piece Item → Adet
+1 craft → 1 üretim
+RRR applies to recipe materials only → RRR sadece reçete malzemelerine uygulanır
+Extra materials → Ek malzemeler
+Craft Count → Üretim Adedi
+Focus Bonus → Odak Bonusu
+Clear Craft → Temizle
+Top 5 Profitable Products → En Karlı 5 Ürün
+Waiting for food or potion market data... → Yemek veya iksir pazar verisi bekleniyor...
+Hide from Top 5 → Top 5 listesinden gizle
+Reset hidden → Gizlenenleri sıfırla
+The use of focus is critical in food and potion production. Production using focus yields significantly higher profits compared to production without focus !!! → Yemek ve iksir üretiminde focus kullanımı kritik önemdedir. Focus kullanılarak yapılan üretim, focussuz üretime göre belirgin ölçüde daha fazla kâr getirir !!!
+Base Focus → Temel Odak
+Chef → Şef
+Alchemy → Simya
+Item Spec → Ürün Spec
+Other Specs → Diğer Specler
+Total Focus Point → Toplam Odak Havuzu
+Mastery Level → Ana Sınıf Seviyesi
+Item Spec Level → Ürün Spec Seviyesi
+Other Spec Total → Diğer Spec Toplamı
+Total Efficiency → Toplam Verimlilik
+Focus / Craft → Odak / Üretim
+Per Craft Focus → Odak / Üretim
+For one craft action → 1 craft işlemi için
+Focus Needed → Gerekli Odak
+Crafts With Focus → Odakla Üretim
+Items With Focus → Odakla Ürün
+Preset Info → Bilgiler
+1 Animal Focus → 1 Hayvan Odak Maliyeti
+Mount Delta → Binek Farkı
